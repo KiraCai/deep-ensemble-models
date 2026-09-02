@@ -1,0 +1,19 @@
+[project]
+name = "binding-affinity-surrogates"
+version = "1.0.0"
+description = "Deep-ensemble surrogate models for accelerating Boltz-2 binding affinity predictions"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy",
+    "pandas",
+    "torch>=2.11.0",
+    "scikit-learn",
+    "scipy",
+    "rdkit>=2024.03",
+    "matplotlib",
+    "tqdm",
+]
+
+[tool.uv]
+environments = ["sys_platform == 'linux'"]
